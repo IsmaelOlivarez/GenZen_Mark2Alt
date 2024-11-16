@@ -1,0 +1,1123 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body {
+    background-color: #141414; /* Dark background */
+    color: #FFFFFF; /* White text color */
+}
+
+/* Header */
+header {
+    padding: 15px;
+    background-color: #141414;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+.header-content .app-title {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.header-content .time {
+    font-size: 1em;
+    color: #AAAAAA;
+}
+
+/* Streak Section */
+.streak-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1E1E1E;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.streak-info {
+    display: flex;
+    flex-direction: column;
+}
+.streak-info .streak-day {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.stats {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9em;
+    color: #CCCCCC;
+}
+.daily-mission {
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Daily Summary Section */
+.daily-summary {
+    padding: 20px;
+    background-color: #1E90FF;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+.daily-summary h2 {
+    font-size: 1.3em;
+    color: white;
+    margin-bottom: 5px;
+}
+.daily-summary p {
+    color: white;
+    font-size: 1em;
+}
+
+/* Recommendations */
+.recommendations {
+    padding: 20px;
+}
+.recommendations h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+.recommendations .highlight {
+    color: #FFA500; /* Orange highlight */
+}
+.book-grid {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+}
+.book-card {
+    background-color: #2E2E2E;
+    width: 100px;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.book-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+.book-card p {
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.nav-item {
+    color: #888;
+    text-align: center;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+.nav-item.active {
+    color: #1E90FF;
+}
+  /* General Styles */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.app-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.page-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+main {
+    flex: 1;
+    padding: 1.5rem;
+}
+
+/* Widget Section Styles */
+.care-widget-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+
+.widget {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+}
+
+.widget:hover {
+    background-color: #e6f7f3;
+}
+
+.widget h2 {
+    font-size: 1.4rem;
+    color: #4CAF50;
+    margin-bottom: 0.5rem;
+}
+
+.widget p {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+.widget ul li {
+    margin-bottom: 0.5rem;
+}
+
+.widget ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.widget ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.btn-track, .btn-schedule {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn-track:hover, .btn-schedule:hover {
+    background-color: #45a049;
+}
+
+/* Bottom Navigation Styles */
+.bottom-nav {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    border-top: 1px solid #ddd;
+}
+
+.nav-item {
+    color: #777;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.nav-item.active, .nav-item:hover {
+    color: #4CAF50;
+    font-weight: bold;
+}
+/* General Styling */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.app-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Profile Picture Centering */
+.profile-info {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: auto;
+}
+
+/* Progress Bar Styling */
+.level-bar {
+    width: 80%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 1.5rem;
+    height: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.level-progress {
+    width: 25%; /* Represents a quarter of the bar */
+    height: 100%;
+    background-color: #4CAF50;
+}
+
+/* Bottom Navigation Styling */
+.bottom-nav {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    border-top: 1px solid #ddd;
+}
+
+.nav-item {
+    color: #777;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.nav-item.active, .nav-item:hover {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* General Styling */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.app-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: flex-start; /* Aligns content to the top */
+    justify-content: center; /* Centers content horizontally */
+}
+
+/* Profile Information Centering */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px; /* Adds a bit of spacing from the top */
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: auto;
+}
+
+/* Progress Bar Styling */
+.level-bar {
+    width: 80%;
+    max-width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+}
+
+.level-progress {
+    width: 25%; /* Represents a quarter of the bar */
+    height: 100%;
+    background-color: #4CAF50;
+}
+
+/* Bottom Navigation Styling */
+.bottom-nav {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    border-top: 1px solid #ddd;
+}
+
+.nav-item {
+    color: #777;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.nav-item.active, .nav-item:hover {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* General Styles */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.app-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Main content */
+main {
+    flex: 1;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Aligns content at the top */
+}
+
+/* Profile Information Centering */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 0; /* No margin to shift it down */
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: auto;
+}
+
+/* Progress Bar Styling */
+.level-bar {
+    width: 80%;
+    max-width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+}
+
+.level-progress {
+    width: 25%; /* Represents a quarter of the bar */
+    height: 100%;
+    background-color: #4CAF50;
+}
+
+/* Bottom Navigation Styling */
+.bottom-nav {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    border-top: 1px solid #ddd;
+}
+
+.nav-item {
+    color: #777;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.nav-item.active, .nav-item:hover {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* General Styles */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111; /* Black background */
+    color: white; /* White text for contrast */
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.app-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Progress Bar and Wellness Points */
+.level-bar {
+    width: 80%;
+    max-width: 300px;
+    background-color: #333; /* Darker background for the progress bar */
+    border-radius: 10px;
+    overflow: hidden;
+    height: 15px;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.level-progress {
+    height: 100%;
+    background-color: #4CAF50;
+}
+
+.wellness-points {
+    position: absolute;
+    right: 10px;
+    bottom: -20px;
+    font-size: 0.8rem;
+    color: #bbb; /* Light gray text for wellness points */
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Shisha Kanko Widget */
+.shisha-kanko-widget {
+    background-color: #222; /* Dark background for the widget */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.shisha-kanko-widget h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.shisha-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.shisha-box {
+    background-color: #333; /* Dark background for each box */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.shisha-box textarea {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #444; /* Dark border for textareas */
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 0.9rem;
+    resize: none;
+    background-color: #222; /* Dark background for text areas */
+    color: white;
+}
+
+.submit-entry {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.submit-entry:hover {
+    background-color: #45a049;
+}
+
+/* Bottom Navigation Styling */
+.bottom-nav {
+    background-color: #333; /* Dark background for the bottom navigation */
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    border-top: 1px solid #444; /* Darker border */
+}
+
+.nav-item {
+    color: #bbb; /* Light gray color for the navigation items */
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.nav-item.active, .nav-item:hover {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Profile Page */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+.app-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.profile-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.stats p {
+    margin: 5px 0;
+}
+
+.level-bar {
+    height: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.level-progress {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+}
+
+/* Widgets Section */
+.widgets {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.widget {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.widget h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.widget ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.widget ul li {
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #444;
+    border-radius: 5px;
+    height: 15px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* Profile Page */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+.app-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.profile-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the area inside the circle */
+}
+
+.stats p {
+    margin: 5px 0;
+}
+
+.level-bar {
+    height: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.level-progress {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 5px;
+    color: white;
+    font-size: 12px;
+    line-height: 10px; /* Centers the text vertically */
+}
+
+.widgets {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.widget {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.widget h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.widget ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.widget ul li {
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #444;
+    border-radius: 5px;
+    height: 15px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-text {
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* General Body Styling */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+.app-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Profile Specific Styling */
+.profile-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the area inside the circle */
+}
+
+.stats p {
+    margin: 5px 0;
+}
+
+.level-bar {
+    height: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.level-progress {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+    text-align: right;
+    padding-right: 5px;
+    color: white;
+    font-size: 12px;
+    line-height: 10px; /* Centers the text vertically */
+}
+
+.widgets {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.widget {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.widget h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.widget ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.widget ul li {
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #444;
+    border-radius: 5px;
+    height: 15px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-text {
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Library Page Specific Styling */
+.library-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.library-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 22%; /* Ensure boxes are thicker */
+}
+
+.library-item h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.library-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.library-item ul li {
+    margin-bottom: 10px;
+}
+
+.library-nav {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Library Page Specific Styling */
+.library-info {
+    display: flex;
+    flex-direction: column; /* Stack the boxes vertically */
+    padding: 20px;
+}
+
+.library-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /* Make each box take up the full width of the row */
+    margin-bottom: 20px; /* Add space between each box */
+}
+
+.library-item h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.library-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.library-item ul li {
+    margin-bottom: 10px;
+}
+
+.library-nav {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Progress Bar Specific Styling */
+.level-bar {
+    background-color: #222;
+    border-radius: 25px;
+    height: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.level-progress {
+    background-color: #007bff; /* Blue color for progress */
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Profile Page */
+.profile-info .level-bar .level-progress {
+    background-color: #007bff; /* Blue color for progress bar on profile page */
+}
+
+/* General Button or Text that had Green */
+.submit-entry {
+    background-color: #007bff; /* Blue color for buttons */
+    color: #fff;
+}
+
+/* Other UI elements */
+.nav-item.active {
+    color: #007bff; /* Blue active nav items */
+}
+
+/* Optional: Additional Style to emphasize blue in links or buttons */
+.nav-item:hover {
+    color: #007bff;
+}
+/* Styling for Weekly Recap Box */
+.weekly-recap {
+    background-color: #333; /* Same dark background as the other boxes */
+    color: #fff; /* White text color */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px; /* Space between previous content */
+}
+
+.weekly-recap h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.recap-list {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.recap-list li {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+/* Styling for Rain Widget */
+.rain-widget {
+    background-color: #333; /* Dark background similar to other boxes */
+    color: #fff; /* White text color */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px; /* Space between previous content */
+}
+
+.rain-widget-content {
+    display: flex;
+    justify-content: space-between; /* Spaces the title and details apart */
+    align-items: center;
+}
+
+.rain-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.rain-details {
+    font-size: 1.1em;
+    text-align: right; /* Align the temperature and weather details to the right */
+}
+
+
