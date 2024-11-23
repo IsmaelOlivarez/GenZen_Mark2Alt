@@ -12,7 +12,7 @@ body {
 
 /* Header */
 header {
-    padding: 15px;
+    padding: 0px;
     background-color: #141414;
     display: flex;
     justify-content: space-between;
@@ -1203,5 +1203,20 @@ header {
     color: #ccc; /* Gray for list items */
 }
 
+.hr-alert {
+    background-color: #222;
+    border-radius: 12px;
+    padding: 12px 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
+
+.hr-alert h1{
+    font-size: 4em;
+    margin-right: 12px;
+}
 
 
