@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>Explore - Wellness Journey</title>
 </head>
 <body>
@@ -24,9 +25,17 @@
         <section class="shisha-kanko-widget">
             <h2>3 Things That Made You Smile Today</h2>
             <form class="entry-form" id="shisha-kanko-form">
-                <textarea placeholder="1. ..." name="entry1" required></textarea>
-                <textarea placeholder="2. ..." name="entry2" required></textarea>
-                <textarea placeholder="3. ..." name="entry3" required></textarea>
+                <div>
+                    <textarea id="smile1" placeholder="1. ..." name="entry1" required></textarea>
+                </div>
+                
+                <div>
+                    <textarea id="smile2" placeholder="2. ..." name="entry2" required></textarea>
+                </div>
+
+                <div>
+                    <textarea id="smile3" placeholder="3. ..." name="entry3" required></textarea>
+                </div>
                 <button type="submit" class="submit-entry">Submit Entry</button>
             </form>
         </section>
@@ -35,9 +44,9 @@
         <section class="weekly-recap">
             <h2>Your Weekly Recap:</h2>
             <ul class="recap-list">
-                <li>You passed your midterm last week</li>
-                <li>Had a great workout session</li>
-                <li>Spent quality time with friends</li>
+                <h4>You passed your midterm last week</h4>
+                <h4>Had a great workout session</h4>
+                <h4>Spent quality time with friends</h4>
             </ul>
         </section>
 
@@ -45,7 +54,7 @@
         <section class="rain-widget">
             <div class="rain-widget-content">
                 <span class="rain-title">Rain Rain Go Away!</span>
-                <span class="rain-details">67°F - Light Showers</span>
+                <span class="rain-details">&nbsp&nbsp&nbsp67°F - Light Showers</span>
             </div>
         </section>
     </main>
@@ -53,15 +62,18 @@
     <nav class="bottom-nav">
         <a href="home.html" class="nav-item">For You</a>
         <a href="explore.html" class="nav-item active">Explore</a>
+        <a href="journal.html" class ="nav-item">Journal</a>
         <a href="library.html" class="nav-item">Library</a>
         <a href="profile.html" class="nav-item">Profile</a>
     </nav>
 
     <script>
         document.getElementById("shisha-kanko-form").addEventListener("submit", function(event) {
+            alert("Entry saved!");
             event.preventDefault();
-            alert("Entry saved!"); // Placeholder action for saving entries
-        });
+            saveJournal(); // Call saveJournal to save the input values
+    });
+
     </script>
 </body>
 </html>

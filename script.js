@@ -1,17 +1,7 @@
 // Typing animation for the welcome message
-const welcomeText = "Welcome back, Daoud";
-const welcomeTextElement = document.getElementById("welcome-text");
-let index = 0;
+// 
 
-function typeWelcomeMessage() {
-    if (index < welcomeText.length) {
-        welcomeTextElement.textContent += welcomeText.charAt(index);
-        index++;
-        setTimeout(typeWelcomeMessage, 100); // Adjust typing speed here
-    }
-}
-
-typeWelcomeMessage();
+//typeWelcomeMessage();
 
 function selectMood(mood) {
     const moodResponse = document.getElementById('mood-response');
@@ -32,13 +22,34 @@ function getAffirmation() {
     affirmationResponse.textContent = affirmations[randomIndex];
 }
 
+
 function saveJournal() {
-    const journalInput = document.getElementById('journal-input').value;
-    const journalResponse = document.getElementById('journal-response');
-    if (journalInput) {
-        journalResponse.textContent = "Journal entry saved!";
-        document.getElementById('journal-input').value = ''; // Clear the input
-    } else {
-        journalResponse.textContent = "Please enter a journal entry.";
+    // Load existing entries from localStorage
+    let journalEntries = JSON.parse(localStorage.getItem('journalEntries')) || [];
+
+    if (!journalEntries) {
+        console.warn("Element with id 'journal-response' not found.");
+        return; // Exit the function if the element does not exist
     }
+    
+    const smile1 = document.getElementById('smile1').value;
+    const smile2 = document.getElementById('smile2').value;
+    const smile3 = document.getElementById('smile3').value;
+    const journalResponse = document.getElementById('journal-response');
+
+    // Validate inputs
+    if (!smile1 || !smile2 || !smile3) {
+        journalResponse.textContent = "Please fill in all three things that made you smile.";
+        return;
+    }
+
+    // Save the response to the array
+    journalEntries.push({ smile1, smile2, smile3 });
+    //journalResponse.textContent = "Journal entry saved!";
+    document.getElementById('smile1').value = '';
+    document.getElementById('smile2').value = '';
+    document.getElementById('smile3').value = '';
+
+    // Save the array to localStorage for persistence
+    localStorage.setItem('journalEntries', JSON.stringify(journalEntries));
 }

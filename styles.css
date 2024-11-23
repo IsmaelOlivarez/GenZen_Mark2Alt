@@ -6,7 +6,7 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 body {
-    background-color: #141414; /* Dark background */
+    background-color: #000000; /* Dark background */
     color: #FFFFFF; /* White text color */
 }
 
@@ -1119,5 +1119,89 @@ header {
     font-size: 1.1em;
     text-align: right; /* Align the temperature and weather details to the right */
 }
+
+/* General Styles */
+
+
+/* Header */
+
+
+
+/* Form Container */
+#responseForm {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #333; /* Slightly lighter black for form background */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+#responseForm h1 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+#responseForm input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    color: #000;
+}
+
+#responseForm button {
+    background-color: #007bff; /* Blue for the button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#responseForm button:hover {
+    background-color: #0056b3;
+}
+
+/* Journal Response List */
+#responseList {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.response {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #222; /* Lighter black for journal entries */
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.response h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.response ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.response li {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ccc; /* Gray for list items */
+}
+
 
 

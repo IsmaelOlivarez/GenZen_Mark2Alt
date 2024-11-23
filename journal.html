@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Journal Responses</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <span class="app-title">Journal</span>
+        </div>
+    </header>
+
+    <h1>Journal Responses</h1>
+    <div id="journal-response"></div>
+
+    <script>
+        // Simulating the responses coming from another source (e.g., localStorage or API)
+        const journalResponses = [
+            { smile1: "Saw a cute puppy", smile2: "Got a compliment from a friend", smile3: "Ate my favorite dessert" },
+            { smile1: "Finished a great book", smile2: "Had a great workout", smile3: "Spent time with family" },
+            { smile1: "Watched a funny video", smile2: "Solved a tough problem", smile3: "Had a sunny day" }
+        ];
+
+        // Function to render responses
+        function displayJournalResponses() {
+            const responseList = document.getElementById("journal-response");
+            responseList.innerHTML = ""; // Clear existing content
+
+            journalResponses.forEach((response, index) => {
+                const responseDiv = document.createElement("div");
+                responseDiv.classList.add("response");
+                responseDiv.innerHTML = `
+                    <h3>Response ${index + 1}</h3>
+                    <ul>
+                        <li>${response.smile1}</li>
+                        <li>${response.smile2}</li>
+                        <li>${response.smile3}</li>
+                    </ul>
+                `;
+                responseList.appendChild(responseDiv);
+            });
+        }
+
+        // Call the function to render the responses
+        displayJournalResponses();
+
+        // Function to load journal entries
+        function loadJournalEntries() {
+    const responseList = document.getElementById('journal-response');
+
+    // Retrieve the saved entries from localStorage
+    const savedEntries = localStorage.getItem('journalEntries');
+    if (savedEntries) {
+        journalEntries = JSON.parse(savedEntries); // Parse the saved data back into the array
+
+        // Display each saved entry
+        journalEntries.forEach((entry, index) => {
+            const entryDiv = document.createElement('div');
+            entryDiv.classList.add("response");
+            //entryDiv.className = 'journal-entry';
+
+            entryDiv.innerHTML = `
+                <h3>Response ${index + 4}</h3>
+                <ul>
+                    <li>${entry.smile1}</li>
+                    <li>${entry.smile2}</li>
+                    <li>${entry.smile3}</li>
+                </ul>
+            `;
+            responseList.appendChild(entryDiv);
+        });
+    }
+}
+
+// Call this function when the page loads
+window.onload = loadJournalEntries;
+
+
+    </script>
+    <nav class="bottom-nav">
+        <a href="home.html" class="nav-item">For You</a>
+        <a href="explore.html" class="nav-item">Explore</a>
+        <a href="journal.html" class ="nav-item active">Journal</a>
+        <a href="library.html" class="nav-item">Library</a>
+        <a href="profile.html" class="nav-item">Profile</a>
+    </nav>
+</body>
+</html>
